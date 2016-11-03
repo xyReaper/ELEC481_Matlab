@@ -9,6 +9,8 @@ clear;
 
 
 %% 
+
+
 %Upper disk calculations
 t31_2= 3.52;
 t31_1= 0.255;
@@ -68,4 +70,7 @@ eq2 = kd3/J3 == (wnd32)^2;
 
 sol = vpasolve([eq1, eq2], [kd3, J3]);
 
-sol.kd3
+J3 = sol.J3;
+kd3= sol.kd3;
+
+
