@@ -106,24 +106,24 @@ clear eq1 eq2
 %% 
 %Claculating damning ratios
 
-syms cd1 cd2;
+syms cd1 cd3;
 
 eq1 = 2*zetad12*wnd12 == cd1/J1;
 sol = vpasolve(eq1, cd1);
 cd1 = double(sol);
 
-eq2 = 2*zetad32*wnd32 == cd2/J3;
-sol = vpasolve(eq2, cd2);
-cd2 = double(sol);
+eq2 = 2*zetad32*wnd32 == cd3/J3;
+sol = vpasolve(eq2, cd3);
+cd3 = double(sol);
 
 disp ('cd1=');
 disp (cd1);
-disp ('cd2=');
-disp (cd2);
+disp ('cd3=');
+disp (cd3);
 clear eq1 eq2 sol
 
 %% 
-
+%remember that c2 and c3 are equal.
 
 
 
