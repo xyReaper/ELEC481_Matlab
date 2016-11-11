@@ -14,15 +14,15 @@ Ds = [J1*J2 (c1*J2 + c2*J1) J1*(k1+k2)+J2*k1+c1*c2 c1*(k1+k2)+c2*k1 k1*k2];
 
 TF1 = tf(khw.*[J2 c2 k1+k2],Ds);
 TF2 = tf(khw.*[0 0 k1], Ds);
-
-figure
-subplot(2,1,1)
-pzmap(TF1)
-grid on
-
-subplot(2,1,2)
-pzmap(TF2)
-grid on
-
+% 
+% figure
+% subplot(2,1,1)
+% pzmap(TF1)
+% grid on
+% 
+% subplot(2,1,2)
+% pzmap(TF2)
+% grid on
+% 
 
 
