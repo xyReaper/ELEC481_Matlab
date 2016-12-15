@@ -47,7 +47,7 @@ a2 = Ac(4,3);
 a1 = Ac(4,2);
 a0 = Ac(4,1);
 
-roots_Ce = [-3 -4 50 100];
+roots_Ce = [-3 -4 -1 -0.5];
 syms x
 poly_Ce_coef= expand(prod(x-roots_Ce));
 Ccoef_poly = double(coeffs(poly_Ce_coef));
